@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>edu.psu.se411</groupId>
+  <artifactId>Lab05-Exception-Handling</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>Lab05</name>
+  <description>SE411 Lab 05 - custom checked exceptions and an online wallet.</description>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>21</maven.compiler.release>
+  </properties>
+
+  <build>
+    <plugins>
+      <!-- Ex 1.5 - runs the program after it has been packaged.
+           Goals: clean -> package -> exec:java -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.5.0</version>
+        <configuration>
+          <mainClass>edu.psu.se411.App</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
