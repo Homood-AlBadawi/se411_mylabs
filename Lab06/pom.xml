@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>edu.psu.se411</groupId>
+	<artifactId>lab06_logging</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.release>21</maven.compiler.release>
+		<slf4j.version>2.0.16</slf4j.version>
+	</properties>
+
+	<dependencies>
+		<!-- Step 2: the SLF4J facade. On its own it logs nothing and prints
+		     "No SLF4J providers were found." - it is an abstraction, not an
+		     implementation. -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+		<!-- Step 4 (intermediate, now replaced): logback was added here first
+		     to prove the facade works once a provider is present.
+
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.5.12</version>
+		</dependency>
+		-->
+
+		<!-- Step 5 (final): swap logback for the log4j 1.2 binding. Nothing in
+		     the Java code changes - only this dependency - which is the whole
+		     point of coding against the SLF4J facade. Configured by
+		     src/main/resources/log4j.properties. -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>3.5.0</version>
+				<configuration>
+					<mainClass>edu.spu.se411.lab06_logging.App</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
