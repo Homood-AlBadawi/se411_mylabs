@@ -1,0 +1,17 @@
+INSERT INTO product (id, name, description, price) values (10, '3d printer', 'A beginner friendly 3d printer', 1840.25);
+INSERT INTO product (id, name, description, price) values (11, '3d printer2', 'A beginner friendly 3d printer', 1790.25);
+INSERT INTO product (id, name, description, price) values (12, '3d printer3', 'A beginner friendly 3d printer', 1450.25);
+INSERT INTO product (id, name, description, price) values (13, '3d printer4', 'A beginner friendly 3d printer', 1210.25);
+INSERT INTO product (id, name, description, price) values (14, '3d printer5', 'A beginner friendly 3d printer', 1140.25);
+INSERT INTO product (id, name, description, price) values (15, '3d printer6', 'A beginner friendly 3d printer', 2840.25);
+INSERT INTO product (id, name, description, price) values (16, '3d printer7', 'A beginner friendly 3d printer', 3240.25);
+INSERT INTO product (id, name, description, price) values (17, '3d printer8', 'A beginner friendly 3d printer', 2840.25);
+INSERT INTO product (id, name, description, price) values (18, '3d printer9', 'A beginner friendly 3d printer', 3640.25);
+INSERT INTO product (id, name, description, price) values (19, 'PC 01', 'A portable computer', 1840.25);
+INSERT INTO product (id, name, description, price) values (20, 'PC 02', 'A portable computer', 1740.25);
+INSERT INTO product (id, name, description, price) values (21, 'PC 03', 'A portable computer', 1560.25);
+INSERT INTO product (id, name, description, price) values (22, 'PC 04', 'A portable computer', 1780.25);
+INSERT INTO product (id, name, description, price) values (23, 'PC 05', 'A portable computer', 1210.25);
+INSERT INTO product (id, name, description, price) values (24, 'PC 06', 'A portable computer', 1980.25);
+INSERT INTO product (id, name, description, price) values (25, 'PC 07', 'A portable computer', 2340.25);
+INSERT INTO product (id, name, description, price) values (26, 'PC 08', 'A portable computer', 2440.25);
