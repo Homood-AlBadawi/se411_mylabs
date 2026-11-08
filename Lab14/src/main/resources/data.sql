@@ -1,0 +1,2 @@
+INSERT INTO course (id, code, name, description, credits) values (default, 'SE201', 'Introduction to software engineering', 'This course is an intro to SE', 3);
+INSERT INTO course (id, code, name, description, credits) values (default, 'CS101', 'Introduction to programming', 'This course is an intro to programming', 3);
