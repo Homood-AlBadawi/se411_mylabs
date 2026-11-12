@@ -1,0 +1,2 @@
+insert into course(code, name, description, credits) values ('SE201', 'Introduction to software engineering', 'This course is an intro to SE', 3);
+insert into course(code, name, description, credits) values ('CS101', 'Introduction to programming', 'This course is an intro to programming', 3);
